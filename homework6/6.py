@@ -4,7 +4,7 @@ def play_round():
     choices = ["камень", "ножницы", "бумага"]
     computer_choice = random.choice(choices)
     
-    user_choice = input("Выберите: камень, ножницы или бумага? ").lower().strip()  # удаляем лишние пробелы
+    user_choice = input("Выберите: камень, ножницы или бумага? ").lower().strip() 
     while user_choice not in choices:
         print("Неверный выбор. Попробуйте снова.")
         user_choice = input("Выберите: камень, ножницы или бумага? ").lower().strip()
